@@ -5,3 +5,11 @@ def display_board(board)
   puts "-----------"
   puts " #{board[7]} | #{board[8]} | #{board[9]} "
 end
+
+def valid_move?(board, index)
+  if !position_taken?(board, index) && index.between(0,8)
+    true
+  else
+    false
+  end
+end
