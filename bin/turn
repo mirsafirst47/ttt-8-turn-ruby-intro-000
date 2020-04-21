@@ -14,6 +14,5 @@ turn(board)
 turn(board)
 turn(board)
 turn(board)
-turn(board)
 
 turn(board)# this calls our turn method in /lib to make the turn.
