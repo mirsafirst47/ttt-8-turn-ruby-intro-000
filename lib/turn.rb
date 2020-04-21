@@ -22,16 +22,16 @@ def position_taken?(board, index)
   end
 end
 
-def move(board, position, char="X")
+def move(board, position, char="X")# It allows X and O players
   board[position] = char
 end
 
-def input_to_index(user_input)
+def input_to_index(user_input)# convert the user input to an integer/ substract 1
   user_input.to_i-1
 end
 
-def turn(board)
+def turn(board)# turn moves.
   puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
+  input = gets.strip# gets the user input/ from our move lesson/ its the user input
+  index = input_to_index(input)#calls the input_to_index method
 end
