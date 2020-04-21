@@ -13,3 +13,19 @@ def valid_move?(board, index)
     false
   end
 end
+
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    true
+  else
+    false
+  end
+end
+
+def move(board, position, char="X")
+  board[position] = char
+end
+
+def input_to_index(user_input)
+  user_input.to_i-1
+end
